@@ -1,0 +1,1569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/StudentXchange" />
+      <xs:element name="Register">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="user" nillable="true" type="q1:User" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RegisterResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="RegisterResult" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Login">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LoginResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="LoginResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="closeAcc">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="closeAccResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createProduct">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="product" nillable="true" type="q2:Product" />
+            <xs:element minOccurs="0" name="categoryId" type="xs:int" />
+            <xs:element minOccurs="0" name="userId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createProductResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUser">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="userId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUserResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getUserResult" nillable="true" type="q3:User" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUsers">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUsersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getUsersResult" nillable="true" type="q4:ArrayOfUser" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getProduct">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="productId" nillable="true" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getProductResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getProductResult" nillable="true" type="q5:Product" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getProducts">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getProductsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getProductsResult" nillable="true" type="q6:ArrayOfProduct" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUserProducts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="userId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUserProductsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getUserProductsResult" nillable="true" type="q7:ArrayOfProduct" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCategoryProducts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="categoryId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCategoryProductsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getCategoryProductsResult" nillable="true" type="q8:ArrayOfProduct" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCategoryProductsHighlow">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="categoryId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCategoryProductsHighlowResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getCategoryProductsHighlowResult" nillable="true" type="q9:ArrayOfProduct" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCategoryProductsLowhigh">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="categoryId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCategoryProductsLowhighResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getCategoryProductsLowhighResult" nillable="true" type="q10:ArrayOfProduct" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCategory">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="categoryId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCategoryResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getCategoryResult" nillable="true" type="q11:Category" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCategories">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCategoriesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getCategoriesResult" nillable="true" type="q12:ArrayOfCategory" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createCategory">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createCategoryResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createPriceOffer">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="priceOffer" nillable="true" type="q13:PriceOffer" />
+            <xs:element minOccurs="0" name="prodId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createPriceOfferResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createReview">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="stars" type="xs:int" />
+            <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="productId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createReviewResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EditProduct">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="product" nillable="true" type="q14:Product" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EditProductResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EditUser">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="appUser" nillable="true" type="q15:User" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EditUserResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUserAddress">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="userId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUserAddressResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getUserAddressResult" nillable="true" type="q16:BillingAddress" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateUserAddress">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="billingAddress" nillable="true" type="q17:BillingAddress" />
+            <xs:element minOccurs="0" name="userId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateUserAddressResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EditAddress">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="address" nillable="true" type="q18:BillingAddress" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EditAddressResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getOrders">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="userId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getOrdersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getOrdersResult" nillable="true" type="q19:ArrayOfORDER" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createOrder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="cartid" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createOrderResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getPriceOffers">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getPriceOffersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getPriceOffersResult" nillable="true" type="q20:ArrayOfPriceOffer" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getPriceOffer">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="offerid" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getPriceOfferResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getPriceOfferResult" nillable="true" type="q21:PriceOffer" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EditPriceOffer">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="offer" nillable="true" type="q22:PriceOffer" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EditPriceOfferResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddToCart">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="cartItem" nillable="true" type="q23:CartItem" />
+            <xs:element minOccurs="0" name="prodid" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddToCartResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCartItems">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="cartId" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="prodid" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCartItemsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getCartItemsResult" nillable="true" type="q24:CartItem" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCartListItems">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="cartId" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="prodid" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCartListItemsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getCartListItemsResult" nillable="true" type="q25:ArrayOfCartItem" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="cartCount">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="cartid" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="cartCountResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="cartCountResult" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="saleCount">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="prodid" type="xs:int" />
+            <xs:element minOccurs="0" name="uid" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="saleCountResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="saleCountResult" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUserbyEmail">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUserbyEmailResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getUserbyEmailResult" nillable="true" type="q26:User" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="deleteCartItem">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="cid" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="deleteCartItemResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="deleteorder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="deleteorderResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="deletepriceoffer">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="deletepriceofferResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="deleteproduct">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="deleteproductResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getOrdersUserIsBought">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="userId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getOrdersUserIsBoughtResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="getOrdersUserIsBoughtResult" nillable="true" type="q27:ArrayOfORDER" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateOrderIsAlreadyBought">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="userid" type="xs:int" />
+            <xs:element minOccurs="0" name="prodid" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateOrderIsAlreadyBoughtResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateQty">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="cartid" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="prodid" type="xs:int" />
+            <xs:element minOccurs="0" name="quantity" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateQtyResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateOrderIsBought">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="userid" type="xs:int" />
+            <xs:element minOccurs="0" name="prodid" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateOrderIsBoughtResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="searchresults">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="searchvalue" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="searchresultsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/StudentXchange" minOccurs="0" name="searchresultsResult" nillable="true" type="q28:ArrayOfProduct" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/StudentXchange" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/StudentXchange" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="User">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BillingAddresses" nillable="true" type="tns:ArrayOfBillingAddress" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ORDERs" nillable="true" type="tns:ArrayOfORDER" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Products" nillable="true" type="tns:ArrayOfProduct" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="User" nillable="true" type="tns:User" />
+      <xs:complexType name="ArrayOfBillingAddress">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="BillingAddress" nillable="true" type="tns:BillingAddress" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfBillingAddress" nillable="true" type="tns:ArrayOfBillingAddress" />
+      <xs:complexType name="BillingAddress">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="BillingAddress" nillable="true" type="tns:BillingAddress" />
+      <xs:complexType name="ArrayOfORDER">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ORDER" nillable="true" type="tns:ORDER" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfORDER" nillable="true" type="tns:ArrayOfORDER" />
+      <xs:complexType name="ORDER">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Isbought" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Price" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Product" nillable="true" type="tns:Product" />
+          <xs:element minOccurs="0" name="ProductId" type="xs:int" />
+          <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ORDER" nillable="true" type="tns:ORDER" />
+      <xs:complexType name="Product">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CartItems" nillable="true" type="tns:ArrayOfCartItem" />
+          <xs:element minOccurs="0" name="Category" nillable="true" type="tns:Category" />
+          <xs:element minOccurs="0" name="CategoryId" type="xs:int" />
+          <xs:element minOccurs="0" name="DateCreated" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="ImageUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImageUrlThumbnail1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImageUrlThumbnail2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImageUrlThumbnail3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ORDERs" nillable="true" type="tns:ArrayOfORDER" />
+          <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+          <xs:element minOccurs="0" name="PriceOffers" nillable="true" type="tns:ArrayOfPriceOffer" />
+          <xs:element minOccurs="0" name="Reviews" nillable="true" type="tns:ArrayOfReview" />
+          <xs:element minOccurs="0" name="Status" type="xs:int" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+          <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Product" nillable="true" type="tns:Product" />
+      <xs:complexType name="ArrayOfCartItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="CartItem" nillable="true" type="tns:CartItem" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfCartItem" nillable="true" type="tns:ArrayOfCartItem" />
+      <xs:complexType name="CartItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemId" type="xs:int" />
+          <xs:element minOccurs="0" name="Product" nillable="true" type="tns:Product" />
+          <xs:element minOccurs="0" name="cartId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="datecreated" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="productId" type="xs:int" />
+          <xs:element minOccurs="0" name="qty" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="CartItem" nillable="true" type="tns:CartItem" />
+      <xs:complexType name="Category">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Products" nillable="true" type="tns:ArrayOfProduct" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Category" nillable="true" type="tns:Category" />
+      <xs:complexType name="ArrayOfProduct">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Product" nillable="true" type="tns:Product" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfProduct" nillable="true" type="tns:ArrayOfProduct" />
+      <xs:complexType name="ArrayOfPriceOffer">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="PriceOffer" nillable="true" type="tns:PriceOffer" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfPriceOffer" nillable="true" type="tns:ArrayOfPriceOffer" />
+      <xs:complexType name="PriceOffer">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Discount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Product" nillable="true" type="tns:Product" />
+          <xs:element minOccurs="0" name="ProductId" type="xs:int" />
+          <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="PriceOffer" nillable="true" type="tns:PriceOffer" />
+      <xs:complexType name="ArrayOfReview">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Review" nillable="true" type="tns:Review" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfReview" nillable="true" type="tns:ArrayOfReview" />
+      <xs:complexType name="Review">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Product" nillable="true" type="tns:Product" />
+          <xs:element minOccurs="0" name="ProductId" type="xs:int" />
+          <xs:element minOccurs="0" name="Stars" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Review" nillable="true" type="tns:Review" />
+      <xs:complexType name="ArrayOfUser">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser" />
+      <xs:complexType name="ArrayOfCategory">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Category" nillable="true" type="tns:Category" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfCategory" nillable="true" type="tns:ArrayOfCategory" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="IService_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_closeAcc_InputMessage">
+    <wsdl:part name="parameters" element="tns:closeAcc" />
+  </wsdl:message>
+  <wsdl:message name="IService_closeAcc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:closeAccResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_createProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:createProduct" />
+  </wsdl:message>
+  <wsdl:message name="IService_createProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUser" />
+  </wsdl:message>
+  <wsdl:message name="IService_getUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUsers" />
+  </wsdl:message>
+  <wsdl:message name="IService_getUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:getProduct" />
+  </wsdl:message>
+  <wsdl:message name="IService_getProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:getProducts" />
+  </wsdl:message>
+  <wsdl:message name="IService_getProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getUserProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserProducts" />
+  </wsdl:message>
+  <wsdl:message name="IService_getUserProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategoryProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryProducts" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategoryProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategoryProductsHighlow_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryProductsHighlow" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategoryProductsHighlow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryProductsHighlowResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategoryProductsLowhigh_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryProductsLowhigh" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategoryProductsLowhigh_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryProductsLowhighResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategory" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategories" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_createCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:createCategory" />
+  </wsdl:message>
+  <wsdl:message name="IService_createCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_createPriceOffer_InputMessage">
+    <wsdl:part name="parameters" element="tns:createPriceOffer" />
+  </wsdl:message>
+  <wsdl:message name="IService_createPriceOffer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createPriceOfferResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_createReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:createReview" />
+  </wsdl:message>
+  <wsdl:message name="IService_createReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_EditProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditProduct" />
+  </wsdl:message>
+  <wsdl:message name="IService_EditProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_EditUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditUser" />
+  </wsdl:message>
+  <wsdl:message name="IService_EditUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getUserAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserAddress" />
+  </wsdl:message>
+  <wsdl:message name="IService_getUserAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_CreateUserAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserAddress" />
+  </wsdl:message>
+  <wsdl:message name="IService_CreateUserAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_EditAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditAddress" />
+  </wsdl:message>
+  <wsdl:message name="IService_EditAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:getOrders" />
+  </wsdl:message>
+  <wsdl:message name="IService_getOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_createOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:createOrder" />
+  </wsdl:message>
+  <wsdl:message name="IService_createOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getPriceOffers_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPriceOffers" />
+  </wsdl:message>
+  <wsdl:message name="IService_getPriceOffers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPriceOffersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getPriceOffer_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPriceOffer" />
+  </wsdl:message>
+  <wsdl:message name="IService_getPriceOffer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPriceOfferResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_EditPriceOffer_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditPriceOffer" />
+  </wsdl:message>
+  <wsdl:message name="IService_EditPriceOffer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditPriceOfferResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_AddToCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddToCart" />
+  </wsdl:message>
+  <wsdl:message name="IService_AddToCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddToCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCartItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCartItems" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCartItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCartItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCartListItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCartListItems" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCartListItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCartListItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_cartCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:cartCount" />
+  </wsdl:message>
+  <wsdl:message name="IService_cartCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cartCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_saleCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:saleCount" />
+  </wsdl:message>
+  <wsdl:message name="IService_saleCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saleCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getUserbyEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserbyEmail" />
+  </wsdl:message>
+  <wsdl:message name="IService_getUserbyEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserbyEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_deleteCartItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteCartItem" />
+  </wsdl:message>
+  <wsdl:message name="IService_deleteCartItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteCartItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_deleteorder_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteorder" />
+  </wsdl:message>
+  <wsdl:message name="IService_deleteorder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteorderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_deletepriceoffer_InputMessage">
+    <wsdl:part name="parameters" element="tns:deletepriceoffer" />
+  </wsdl:message>
+  <wsdl:message name="IService_deletepriceoffer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deletepriceofferResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_deleteproduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteproduct" />
+  </wsdl:message>
+  <wsdl:message name="IService_deleteproduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteproductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getOrdersUserIsBought_InputMessage">
+    <wsdl:part name="parameters" element="tns:getOrdersUserIsBought" />
+  </wsdl:message>
+  <wsdl:message name="IService_getOrdersUserIsBought_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getOrdersUserIsBoughtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_updateOrderIsAlreadyBought_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateOrderIsAlreadyBought" />
+  </wsdl:message>
+  <wsdl:message name="IService_updateOrderIsAlreadyBought_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateOrderIsAlreadyBoughtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_updateQty_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateQty" />
+  </wsdl:message>
+  <wsdl:message name="IService_updateQty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_updateOrderIsBought_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateOrderIsBought" />
+  </wsdl:message>
+  <wsdl:message name="IService_updateOrderIsBought_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateOrderIsBoughtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_searchresults_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchresults" />
+  </wsdl:message>
+  <wsdl:message name="IService_searchresults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchresultsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Register" message="tns:IService_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/RegisterResponse" message="tns:IService_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Login" message="tns:IService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/LoginResponse" message="tns:IService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="closeAcc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/closeAcc" message="tns:IService_closeAcc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/closeAccResponse" message="tns:IService_closeAcc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/createProduct" message="tns:IService_createProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/createProductResponse" message="tns:IService_createProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getUser" message="tns:IService_getUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getUserResponse" message="tns:IService_getUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getUsers" message="tns:IService_getUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getUsersResponse" message="tns:IService_getUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getProduct" message="tns:IService_getProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getProductResponse" message="tns:IService_getProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getProducts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getProducts" message="tns:IService_getProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getProductsResponse" message="tns:IService_getProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserProducts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getUserProducts" message="tns:IService_getUserProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getUserProductsResponse" message="tns:IService_getUserProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategoryProducts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getCategoryProducts" message="tns:IService_getCategoryProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getCategoryProductsResponse" message="tns:IService_getCategoryProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategoryProductsHighlow">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getCategoryProductsHighlow" message="tns:IService_getCategoryProductsHighlow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getCategoryProductsHighlowResponse" message="tns:IService_getCategoryProductsHighlow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategoryProductsLowhigh">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getCategoryProductsLowhigh" message="tns:IService_getCategoryProductsLowhigh_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getCategoryProductsLowhighResponse" message="tns:IService_getCategoryProductsLowhigh_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getCategory" message="tns:IService_getCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getCategoryResponse" message="tns:IService_getCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategories">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getCategories" message="tns:IService_getCategories_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getCategoriesResponse" message="tns:IService_getCategories_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/createCategory" message="tns:IService_createCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/createCategoryResponse" message="tns:IService_createCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createPriceOffer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/createPriceOffer" message="tns:IService_createPriceOffer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/createPriceOfferResponse" message="tns:IService_createPriceOffer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/createReview" message="tns:IService_createReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/createReviewResponse" message="tns:IService_createReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/EditProduct" message="tns:IService_EditProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/EditProductResponse" message="tns:IService_EditProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/EditUser" message="tns:IService_EditUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/EditUserResponse" message="tns:IService_EditUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getUserAddress" message="tns:IService_getUserAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getUserAddressResponse" message="tns:IService_getUserAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/CreateUserAddress" message="tns:IService_CreateUserAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/CreateUserAddressResponse" message="tns:IService_CreateUserAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/EditAddress" message="tns:IService_EditAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/EditAddressResponse" message="tns:IService_EditAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getOrders" message="tns:IService_getOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getOrdersResponse" message="tns:IService_getOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/createOrder" message="tns:IService_createOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/createOrderResponse" message="tns:IService_createOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPriceOffers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getPriceOffers" message="tns:IService_getPriceOffers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getPriceOffersResponse" message="tns:IService_getPriceOffers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPriceOffer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getPriceOffer" message="tns:IService_getPriceOffer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getPriceOfferResponse" message="tns:IService_getPriceOffer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditPriceOffer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/EditPriceOffer" message="tns:IService_EditPriceOffer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/EditPriceOfferResponse" message="tns:IService_EditPriceOffer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddToCart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/AddToCart" message="tns:IService_AddToCart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/AddToCartResponse" message="tns:IService_AddToCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCartItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getCartItems" message="tns:IService_getCartItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getCartItemsResponse" message="tns:IService_getCartItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCartListItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getCartListItems" message="tns:IService_getCartListItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getCartListItemsResponse" message="tns:IService_getCartListItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cartCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/cartCount" message="tns:IService_cartCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/cartCountResponse" message="tns:IService_cartCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saleCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/saleCount" message="tns:IService_saleCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/saleCountResponse" message="tns:IService_saleCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserbyEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getUserbyEmail" message="tns:IService_getUserbyEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getUserbyEmailResponse" message="tns:IService_getUserbyEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteCartItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/deleteCartItem" message="tns:IService_deleteCartItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/deleteCartItemResponse" message="tns:IService_deleteCartItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteorder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/deleteorder" message="tns:IService_deleteorder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/deleteorderResponse" message="tns:IService_deleteorder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deletepriceoffer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/deletepriceoffer" message="tns:IService_deletepriceoffer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/deletepriceofferResponse" message="tns:IService_deletepriceoffer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteproduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/deleteproduct" message="tns:IService_deleteproduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/deleteproductResponse" message="tns:IService_deleteproduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getOrdersUserIsBought">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getOrdersUserIsBought" message="tns:IService_getOrdersUserIsBought_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getOrdersUserIsBoughtResponse" message="tns:IService_getOrdersUserIsBought_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateOrderIsAlreadyBought">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/updateOrderIsAlreadyBought" message="tns:IService_updateOrderIsAlreadyBought_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/updateOrderIsAlreadyBoughtResponse" message="tns:IService_updateOrderIsAlreadyBought_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateQty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/updateQty" message="tns:IService_updateQty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/updateQtyResponse" message="tns:IService_updateQty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateOrderIsBought">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/updateOrderIsBought" message="tns:IService_updateOrderIsBought_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/updateOrderIsBoughtResponse" message="tns:IService_updateOrderIsBought_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchresults">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/searchresults" message="tns:IService_searchresults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/searchresultsResponse" message="tns:IService_searchresults_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/IService/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="closeAcc">
+      <soap:operation soapAction="http://tempuri.org/IService/closeAcc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createProduct">
+      <soap:operation soapAction="http://tempuri.org/IService/createProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <soap:operation soapAction="http://tempuri.org/IService/getUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsers">
+      <soap:operation soapAction="http://tempuri.org/IService/getUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProduct">
+      <soap:operation soapAction="http://tempuri.org/IService/getProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProducts">
+      <soap:operation soapAction="http://tempuri.org/IService/getProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserProducts">
+      <soap:operation soapAction="http://tempuri.org/IService/getUserProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategoryProducts">
+      <soap:operation soapAction="http://tempuri.org/IService/getCategoryProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategoryProductsHighlow">
+      <soap:operation soapAction="http://tempuri.org/IService/getCategoryProductsHighlow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategoryProductsLowhigh">
+      <soap:operation soapAction="http://tempuri.org/IService/getCategoryProductsLowhigh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategory">
+      <soap:operation soapAction="http://tempuri.org/IService/getCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategories">
+      <soap:operation soapAction="http://tempuri.org/IService/getCategories" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createCategory">
+      <soap:operation soapAction="http://tempuri.org/IService/createCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createPriceOffer">
+      <soap:operation soapAction="http://tempuri.org/IService/createPriceOffer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createReview">
+      <soap:operation soapAction="http://tempuri.org/IService/createReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditProduct">
+      <soap:operation soapAction="http://tempuri.org/IService/EditProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <soap:operation soapAction="http://tempuri.org/IService/EditUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserAddress">
+      <soap:operation soapAction="http://tempuri.org/IService/getUserAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserAddress">
+      <soap:operation soapAction="http://tempuri.org/IService/CreateUserAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAddress">
+      <soap:operation soapAction="http://tempuri.org/IService/EditAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOrders">
+      <soap:operation soapAction="http://tempuri.org/IService/getOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createOrder">
+      <soap:operation soapAction="http://tempuri.org/IService/createOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPriceOffers">
+      <soap:operation soapAction="http://tempuri.org/IService/getPriceOffers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPriceOffer">
+      <soap:operation soapAction="http://tempuri.org/IService/getPriceOffer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditPriceOffer">
+      <soap:operation soapAction="http://tempuri.org/IService/EditPriceOffer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddToCart">
+      <soap:operation soapAction="http://tempuri.org/IService/AddToCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCartItems">
+      <soap:operation soapAction="http://tempuri.org/IService/getCartItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCartListItems">
+      <soap:operation soapAction="http://tempuri.org/IService/getCartListItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cartCount">
+      <soap:operation soapAction="http://tempuri.org/IService/cartCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saleCount">
+      <soap:operation soapAction="http://tempuri.org/IService/saleCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserbyEmail">
+      <soap:operation soapAction="http://tempuri.org/IService/getUserbyEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteCartItem">
+      <soap:operation soapAction="http://tempuri.org/IService/deleteCartItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteorder">
+      <soap:operation soapAction="http://tempuri.org/IService/deleteorder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletepriceoffer">
+      <soap:operation soapAction="http://tempuri.org/IService/deletepriceoffer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteproduct">
+      <soap:operation soapAction="http://tempuri.org/IService/deleteproduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOrdersUserIsBought">
+      <soap:operation soapAction="http://tempuri.org/IService/getOrdersUserIsBought" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateOrderIsAlreadyBought">
+      <soap:operation soapAction="http://tempuri.org/IService/updateOrderIsAlreadyBought" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateQty">
+      <soap:operation soapAction="http://tempuri.org/IService/updateQty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateOrderIsBought">
+      <soap:operation soapAction="http://tempuri.org/IService/updateOrderIsBought" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchresults">
+      <soap:operation soapAction="http://tempuri.org/IService/searchresults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://localhost:49690/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

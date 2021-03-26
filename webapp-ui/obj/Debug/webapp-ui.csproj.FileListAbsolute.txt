@@ -1,0 +1,246 @@
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\webapp-ui.dll.config
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\webapp-ui.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\webapp-ui.pdb
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\csc.exe
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\csc.exe.config
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\csc.rsp
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\csi.exe
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\csi.exe.config
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\csi.rsp
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Managed.Core.targets
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.AppContext.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Collections.Immutable.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Console.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Globalization.Calendars.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.IO.Compression.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.IO.FileSystem.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Net.Http.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Net.Sockets.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Reflection.Metadata.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.ValueTuple.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XmlDocument.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XPath.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\vbc.exe
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\vbc.exe.config
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\vbc.rsp
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\VBCSCompiler.exe
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\roslyn\VBCSCompiler.exe.config
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csprojAssemblyReference.cache
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csproj.CoreCompileInputs.cache
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csproj.CopyComplete
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\obj\Debug\webapp-ui.dll
+C:\development\2020 Group Project\user-interface\webapp-ui\webapp-ui\obj\Debug\webapp-ui.pdb
+C:\development\Group project\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csproj.CoreCompileInputs.cache
+C:\development\Group project\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.pdb
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\webapp-ui.dll.config
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\webapp-ui.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\webapp-ui.pdb
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\csc.exe
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\csc.exe.config
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\csc.rsp
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\csi.exe
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\csi.exe.config
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\csi.rsp
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Managed.Core.targets
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.AppContext.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Collections.Immutable.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Console.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Globalization.Calendars.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.Compression.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.FileSystem.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Net.Http.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Net.Sockets.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Reflection.Metadata.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.ValueTuple.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XmlDocument.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XPath.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\vbc.exe
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\vbc.exe.config
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\vbc.rsp
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\VBCSCompiler.exe
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\roslyn\VBCSCompiler.exe.config
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\development\Group project\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csproj.CopyComplete
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\itextsharp.dll
+C:\development\Group project\web\webapp-ui\webapp-ui\bin\itextsharp.xml
+C:\development\Group project\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csprojAssemblyReference.cache
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.pdb
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\webapp-ui.dll.config
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\webapp-ui.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\webapp-ui.pdb
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csc.exe
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csc.exe.config
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csc.rsp
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csi.exe
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csi.exe.config
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csi.rsp
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.AppContext.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Console.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.Compression.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Net.Http.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.ValueTuple.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\vbc.exe
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\vbc.exe.config
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\vbc.rsp
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\itextsharp.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\itextsharp.xml
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csproj.CopyComplete
+C:\Users\Nikola\Desktop\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csprojAssemblyReference.cache
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\webapp-ui.dll.config
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\webapp-ui.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\webapp-ui.pdb
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csc.exe
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csc.exe.config
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csc.rsp
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csi.exe
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csi.exe.config
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\csi.rsp
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.AppContext.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Console.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.Compression.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Net.Http.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.ValueTuple.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\vbc.exe
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\vbc.exe.config
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\vbc.rsp
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\itextsharp.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\itextsharp.xml
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csprojAssemblyReference.cache
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csproj.CoreCompileInputs.cache
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csproj.CopyComplete
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.dll
+C:\Users\Tony Lebea\Downloads\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.pdb
+C:\Users\Tony\Downloads\19\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csprojAssemblyReference.cache
+C:\Users\Tony\Downloads\19\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.csproj.CoreCompileInputs.cache
+C:\Users\Tony\Downloads\19\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.dll
+C:\Users\Tony\Downloads\19\RoslynMasters\web\webapp-ui\webapp-ui\obj\Debug\webapp-ui.pdb
